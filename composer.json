@@ -1,0 +1,31 @@
+{
+	"name": "circli/tenant-extension",
+	"description": "Interface to implement multi tenant applications",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Andreas Sundqvist",
+			"email": "andreas@stefna.is"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"Circli\\TenantExtension\\": "src/"
+		}
+	},
+	"require": {
+		"php": "^8.0"
+	},
+	"require-dev": {
+		"stefna/codestyle": "^1.11",
+		"phpstan/phpstan": "^0.12.85"
+	},
+	"scripts": {
+		"check": "./vendor/bin/phpcs --standard=vendor/stefna/codestyle/library.xml src/",
+		"fix": "./vendor/bin/phpcbf --standard=vendor/stefna/codestyle/library.xml src/",
+		"stan": "phpstan analyse"
+	}
+}

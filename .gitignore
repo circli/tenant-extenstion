@@ -1,0 +1,11 @@
+.idea/
+.DS_Store
+
+# ignore phpunit cache file
+.phpunit.result.cache
+
+*.phar
+*.lock
+*.cache
+/vendor/
+
