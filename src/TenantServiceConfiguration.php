@@ -11,5 +11,5 @@ interface TenantServiceConfiguration
 	 * @param array<string, mixed> $config
 	 * @return T
 	 */
-	public static function configure(array $config);
+	public function configure(array $config);
 }
