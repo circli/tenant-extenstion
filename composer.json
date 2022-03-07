@@ -21,7 +21,7 @@
 	},
 	"require-dev": {
 		"stefna/codestyle": "^1.11",
-		"phpstan/phpstan": "^0.12.85"
+		"phpstan/phpstan": "^1.0"
 	},
 	"scripts": {
 		"check": "./vendor/bin/phpcs --standard=vendor/stefna/codestyle/library.xml src/",
